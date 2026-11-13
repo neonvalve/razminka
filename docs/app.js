@@ -11,13 +11,13 @@ document.querySelectorAll('.screenshot').forEach(button => {
 document.querySelector('#close-lightbox').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
 
-fetch('https://api.github.com/repos/neonvalve/razminka-releases/releases/latest', { signal: AbortSignal.timeout(8000) })
+fetch('https://api.github.com/repos/neonvalve/razminka/releases/latest', { signal: AbortSignal.timeout(8000) })
   .then(response => { if (!response.ok) throw new Error('Release unavailable'); return response.json(); })
   .then(release => {
     if (release.draft || release.prerelease || !Array.isArray(release.assets)) return;
     for (const [id, suffix] of [['setup-link', '-Setup-x64.exe'], ['portable-link', '-Portable-x64.zip']]) {
       const asset = release.assets.find(item => item.name.startsWith('Razminka-') && item.name.endsWith(suffix));
-      if (asset?.browser_download_url?.startsWith('https://github.com/neonvalve/razminka-releases/releases/download/')) {
+      if (asset?.browser_download_url?.startsWith('https://github.com/neonvalve/razminka/releases/download/')) {
         document.getElementById(id).href = asset.browser_download_url;
       }
     }
