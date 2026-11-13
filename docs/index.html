@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Разминка — бесплатные напоминания о движении для Windows. Упражнения по таймеру и повторениям, свои тренировки, переносимая версия и автообновления.">
+  <meta name="theme-color" content="#eaf2fb">
+  <title>Разминка — пора встать из-за стола</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="wrap">
+  <a class="brand" href="#"><img src="assets/icon.png" width="38" height="38" alt="">Разминка</a>
+  <nav aria-label="Главное меню"><a href="#features">Возможности</a><a href="#screens">Скриншоты</a><a href="#download">Скачать</a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <div class="intro">
+      <p class="availability">Бесплатное приложение для Windows</p>
+      <h1>Работа подождёт.<br>Пора размяться.</h1>
+      <p class="lead">Когда увлекаешься делом, легко забыть о перерыве. Разминка считает время за компьютером и напоминает встать, подвигаться и вернуться к работе.</p>
+      <a class="button primary" href="#download">Выбрать версию</a>
+      <p class="quiet">Живёт в трее. Не требует аккаунта.</p>
+    </div>
+    <figure class="hero-shot">
+      <img src="assets/reminder.png" width="580" height="600" alt="Напоминание «Пора размяться» с кнопками начала, отсрочки и пропуска">
+      <figcaption>Небольшая пауза посреди большого рабочего дня.</figcaption>
+    </figure>
+  </section>
+  <div class="rhythm"><div class="wrap"><span>Поработать</span><i aria-hidden="true"></i><span>Размяться</span><i aria-hidden="true"></i><span>Продолжить</span></div></div>
+  <section id="features" class="wrap features">
+    <h2>Перерыв, который<br>вписывается в ваш день</h2>
+    <div class="feature-list">
+      <article><h3>Считает активное время</h3><p>Долгое отсутствие ввода, блокировка экрана и сон компьютера засчитываются как перерыв. Рабочий интервал начинается заново.</p></article>
+      <article><h3>Даёт закончить своё дело</h3><p>Отложите напоминание, пропустите его или поставьте паузу на час. Во время полноэкранной игры или презентации напоминание подождёт.</p></article>
+      <article><h3>Подстраивается под ваш ритм</h3><p>Настройте интервал и активные часы. Выберите постоянную тренировку: по таймеру или с нужным количеством повторений.</p></article>
+      <article><h3>Оставляет выбор вам</h3><p>Добавляйте свои тренировки отдельными JSON-файлами. Настройки и счётчики хранятся на компьютере; регистрация не нужна.</p></article>
+    </div>
+  </section>
+  <section class="training">
+    <div class="wrap training-layout">
+      <div><h2>10 раз.<br>Потом ещё 15.</h2><p>Готовая тренировка чередует отжимания и приседания. Между подходами — 10 секунд подготовки. Выполнили повторения? Нажмите «Готово» и переходите дальше.</p><p>Для упражнений на время есть круговой таймер, пауза и звуковые сигналы. Можно отключить звук и заниматься в тишине.</p></div>
+      <ol class="sets"><li><span>Отжимания</span><strong>10</strong></li><li><span>Приседания</span><strong>10</strong></li><li><span>Отжимания</span><strong>15</strong></li><li><span>Приседания</span><strong>15</strong></li></ol>
+    </div>
+  </section>
+  <section id="screens" class="wrap screens">
+    <div class="section-heading"><h2>Посмотрите, как это работает</h2><p>Настоящие экраны приложения. Нажмите на изображение, чтобы рассмотреть.</p></div>
+    <div class="gallery">
+      <figure><button class="screenshot" aria-label="Увеличить экран упражнения"><img src="assets/exercise.png" width="580" height="600" loading="lazy" alt="Ходьба на месте: круговой таймер и подсказка к упражнению"></button><figcaption>Упражнения по таймеру</figcaption></figure>
+      <figure><button class="screenshot" aria-label="Увеличить экран повторений"><img src="assets/repetitions.png" width="580" height="600" loading="lazy" alt="Отжимания: 10 повторений и кнопка «Готово»"></button><figcaption>Повторения в своём темпе</figcaption></figure>
+      <figure><button class="screenshot" aria-label="Увеличить настройки"><img src="assets/settings.png" width="580" height="540" loading="lazy" alt="Настройки интервалов, выбор тренировки, автообновление и поддержка автора"></button><figcaption>Один раз настроить под себя</figcaption></figure>
+    </div>
+  </section>
+  <section id="download" class="download">
+    <div class="wrap"><h2>Начните с одной разминки</h2><p>Windows 10 / 11, 64 бита. Все необходимые библиотеки уже в комплекте.</p>
+      <div class="downloads">
+        <article><h3>Установить</h3><p>Обычный установщик, ярлык в меню «Пуск» и возможность автозапуска. Права администратора не нужны.</p><a id="setup-link" class="button primary" href="https://github.com/neonvalve/razminka-releases/releases/latest">Скачать установщик</a></article>
+        <article><h3>Запустить без установки</h3><p>Распакуйте ZIP и откройте Razminka.exe. Настройки остаются в папке программы — удобно брать с собой.</p><a id="portable-link" class="button" href="https://github.com/neonvalve/razminka-releases/releases/latest">Скачать переносимую версию</a></article>
+      </div>
+      <p class="release-info"><span id="version">Актуальная версия — на GitHub Releases.</span> <a href="https://github.com/neonvalve/razminka-releases/releases">Все выпуски и контрольные суммы</a></p>
+    </div>
+  </section>
+  <section class="wrap faq"><h2>Пара деталей перед началом</h2>
+    <details><summary>Как выбрать постоянную тренировку?</summary><p>Откройте значок в трее → «Настройки…» → «Тренировка». Выберите программу и сохраните. Именно она появится при следующем напоминании, в том числе после перезапуска.</p></details>
+    <details><summary>Можно добавить свои упражнения?</summary><p>Да. В настройках откройте «Папка тренировок», скопируйте один из JSON-файлов под новым именем и измените упражнения. Поле seconds задаёт время, repetitions — количество раз. Нажмите «Обновить» в настройках и выберите новый файл.</p></details>
+    <details><summary>Как работают обновления?</summary><p>Начиная с версии 1.2 приложение проверяет GitHub после запуска и раз в шесть часов, загружает новую версию и проверяет контрольную сумму. Установка — по вашему подтверждению через меню трея, с перезапуском. Можно отключить автоматическую проверку в настройках. С версий 1.0 и 1.1 нужно один раз обновиться вручную.</p></details>
+    <details><summary>Какие данные отправляются в сеть?</summary><p>Тренировки, счётчики и настройки остаются на вашем компьютере. Проверка и загрузка обновлений обращаются к GitHub. Сайт и кнопка поддержки открываются в браузере; приложение не обрабатывает платежи.</p></details>
+  </section>
+  <section class="coffee wrap"><div><h2>Перерыв на кофе — автору?</h2><p>Разминка бесплатна. Если она помогает вам чаще вставать из-за стола, можно поддержать её развитие.</p></div><a class="button coffee-button" href="https://pay.cloudtips.ru/p/019480d0" target="_blank" rel="noopener noreferrer">Угостить автора кофе</a><small>Добровольная поддержка через CloudTips. Все функции доступны без оплаты.</small></section>
+</main>
+<footer class="wrap"><a class="brand" href="#">Разминка</a><span>Сделано neonvalve</span><a href="https://github.com/neonvalve/razminka-releases/issues">Сообщить об ошибке</a><a href="https://github.com/neonvalve/razminka-releases">GitHub</a></footer>
+<dialog id="lightbox"><button id="close-lightbox" autofocus>Закрыть</button><img src="assets/reminder.png" alt=""></dialog>
+</body>
+</html>
